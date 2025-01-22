@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+Desenvolver um cliente Rest onde seja possível visualizar de forma amigável as informações de propriedades dos países presentes na API (https://restcountries.com) como nome, capital, região, sub-região, população, área, fuso horário, nome nativo e a bandeira.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A aplicação deve ter o mecanismo para exportar as informações dos países para o formato XLS, CSV e XML.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+**Solução Desenvolvida**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A solução foi desenvolvida utilizando React, garantindo uma solução com  interface moderna e responsiva.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Funcionalidades Implementadas
 
-### `npm test`
+**Barra de Pesquisa:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O cliente pode pesquisar qualquer país pelo nome.
 
-### `npm run build`
+Os países são listados de acordo com as letras digitadas.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Slide Show Interativo:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Permite navegar entre os países de forma intuitiva deslizando na tela.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Detalhes dos Países:**
 
-### `npm run eject`
+Cada país apresenta suas informações detalhadas.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Botão "Ver mais" para acessar detalhes adicionais.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Exportação de Dados:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+As informações podem ser exportadas para os seguintes formatos:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+XLS (Excel)
 
-## Learn More
+CSV (Comma Separated Values)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+XML (Extensible Markup Language)
+e por fim um botão para visitar o país onde vai ser direcionado ao Google Maps e verá a capital do tal país 
+**Tecnologias Utilizadas**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React: Para criação da interface de usuário responsiva.
+JS: para lógica de negócio, animações 
 
-### Code Splitting
+REST API: Consumo da API https://restcountries.com para obter os dados.
+NODE.JS : para permitir criar o projecto React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Pacotes Utilizados:**
 
-### Analyzing the Bundle Size
+http para requisições HTTP.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+excel para geração de arquivos XLS.
 
-### Making a Progressive Web App
+csv para exportação de dados em formato CSV.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+xml para criação de documentos XML.
 
-### Advanced Configuration
+npm para instalação de dependências
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+**Como Executar o Projeto**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Primeiro garanta ter o ambiente instalado**
 
-### `npm run build` fails to minify
+controi o projecto:
+**npm run build**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Instale as dependências:
+
+**npm install**
+
+
+Execute o projeto:
+**npm start**
